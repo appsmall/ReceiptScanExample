@@ -1,0 +1,6 @@
+framework module Pods_ios_receipt_scan_example {
+  umbrella header "Pods-ios-receipt-scan-example-umbrella.h"
+
+  export *
+  module * { export * }
+}

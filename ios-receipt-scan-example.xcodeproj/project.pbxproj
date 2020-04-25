@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FBD82F1EB05CBFD4488E067 /* Pods_ios_receipt_scan_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7654ED0619D13805FF497738 /* Pods_ios_receipt_scan_example.framework */; };
+		A6D628AF1AEAEB2E00DE2002 /* NFNReceiptRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D628AE1AEAEB2E00DE2002 /* NFNReceiptRecognitionViewController.m */; };
+		A6E166151B261BFF001CDBC8 /* NFNOCRService.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E166141B261BFF001CDBC8 /* NFNOCRService.m */; };
+		A6E166191B261CC9001CDBC8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E166181B261CC9001CDBC8 /* Reachability.m */; };
+		A6E1661C1B261CD9001CDBC8 /* NetworkAvailabilityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1661B1B261CD9001CDBC8 /* NetworkAvailabilityUtils.m */; };
+		A6E1662D1B261DAE001CDBC8 /* PassCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E166271B261DAE001CDBC8 /* PassCode.m */; };
+		A6E1662F1B261DAE001CDBC8 /* CounterSignCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1662B1B261DAE001CDBC8 /* CounterSignCode.m */; };
+		A6E166321B261EA2001CDBC8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E166311B261EA2001CDBC8 /* Constants.m */; };
+		A6E166361B2623D0001CDBC8 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E166351B2623D0001CDBC8 /* UIImage+Common.m */; };
+		A6E1663A1B2624B8001CDBC8 /* TaxReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E166391B2624B8001CDBC8 /* TaxReceipt.m */; };
+		A6E1D3B51B274F740004FF48 /* CNPJFormatterTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1D3AE1B274F740004FF48 /* CNPJFormatterTextFieldDelegate.m */; };
+		A6E1D3B61B274F740004FF48 /* DateFormatterTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1D3B01B274F740004FF48 /* DateFormatterTextFieldDelegate.m */; };
+		A6E1D3B71B274F740004FF48 /* CurrencyFormatterTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1D3B21B274F740004FF48 /* CurrencyFormatterTextFieldDelegate.m */; };
+		A6E1D3B81B274F740004FF48 /* COOFormatterTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1D3B41B274F740004FF48 /* COOFormatterTextFieldDelegate.m */; };
+		A6E3171C1B27604700414C9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E3171B1B27604700414C9C /* QuartzCore.framework */; };
+		A6E3171F1B27665600414C9C /* NSString+Numeric.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E3171E1B27665600414C9C /* NSString+Numeric.m */; };
+		A6FD5AC61AEADC6800376D9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD5AC51AEADC6800376D9D /* main.m */; };
+		A6FD5AC91AEADC6800376D9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD5AC81AEADC6800376D9D /* AppDelegate.m */; };
+		A6FD5ACF1AEADC6800376D9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD5ACD1AEADC6800376D9D /* Main.storyboard */; };
+		A6FD5AD11AEADC6800376D9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FD5AD01AEADC6800376D9D /* Images.xcassets */; };
+		A6FD5AD41AEADC6800376D9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6FD5AD21AEADC6800376D9D /* LaunchScreen.xib */; };
+		A6FD5AE01AEADC6800376D9D /* ios_receipt_scan_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD5ADF1AEADC6800376D9D /* ios_receipt_scan_exampleTests.m */; };
+		A6FD5AEB1AEADCE300376D9D /* NFNCameraRectDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD5AEA1AEADCE300376D9D /* NFNCameraRectDetectionViewController.m */; };
+		A6FD5AED1AEADD0500376D9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD5AEC1AEADD0500376D9D /* UIKit.framework */; };
+		A6FD5AEF1AEADD0B00376D9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD5AEE1AEADD0B00376D9D /* AVFoundation.framework */; };
+		A6FD5AF11AEADD1300376D9D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD5AF01AEADD1300376D9D /* CoreMedia.framework */; };
+		A6FD5AF31AEADD1B00376D9D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD5AF21AEADD1B00376D9D /* CoreVideo.framework */; };
+		A6FD5AF51AEADD2600376D9D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD5AF41AEADD2600376D9D /* CoreImage.framework */; };
+		A6FD5AF71AEADD3A00376D9D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD5AF61AEADD3A00376D9D /* ImageIO.framework */; };
+		A6FD5AF91AEADD4E00376D9D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD5AF81AEADD4E00376D9D /* GLKit.framework */; };
+		D201813F3FE7248690B40977 /* Pods_ios_receipt_scan_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455229F8E0F1219CB25A6A18 /* Pods_ios_receipt_scan_exampleTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6FD5ADA1AEADC6800376D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FD5AB81AEADC6800376D9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FD5ABF1AEADC6800376D9D;
+			remoteInfo = "ios-receipt-scan-example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11E5B9B769B9A9DCF0E8A015 /* Pods-ios-receipt-scan-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-receipt-scan-exampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-receipt-scan-exampleTests/Pods-ios-receipt-scan-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		455229F8E0F1219CB25A6A18 /* Pods_ios_receipt_scan_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_receipt_scan_exampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9FFFD7F2A658E402603D29 /* Pods-ios-receipt-scan-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-receipt-scan-example.release.xcconfig"; path = "Target Support Files/Pods-ios-receipt-scan-example/Pods-ios-receipt-scan-example.release.xcconfig"; sourceTree = "<group>"; };
+		5E43F4A3AB491B9A3F9847B3 /* Pods-ios-receipt-scan-exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-receipt-scan-exampleTests.release.xcconfig"; path = "Target Support Files/Pods-ios-receipt-scan-exampleTests/Pods-ios-receipt-scan-exampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		7654ED0619D13805FF497738 /* Pods_ios_receipt_scan_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_receipt_scan_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D628AD1AEAEB2E00DE2002 /* NFNReceiptRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFNReceiptRecognitionViewController.h; sourceTree = "<group>"; };
+		A6D628AE1AEAEB2E00DE2002 /* NFNReceiptRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFNReceiptRecognitionViewController.m; sourceTree = "<group>"; };
+		A6E166131B261BFF001CDBC8 /* NFNOCRService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFNOCRService.h; sourceTree = "<group>"; };
+		A6E166141B261BFF001CDBC8 /* NFNOCRService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFNOCRService.m; sourceTree = "<group>"; };
+		A6E166171B261CC9001CDBC8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A6E166181B261CC9001CDBC8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A6E1661A1B261CD9001CDBC8 /* NetworkAvailabilityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkAvailabilityUtils.h; sourceTree = "<group>"; };
+		A6E1661B1B261CD9001CDBC8 /* NetworkAvailabilityUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkAvailabilityUtils.m; sourceTree = "<group>"; };
+		A6E166261B261DAE001CDBC8 /* PassCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassCode.h; sourceTree = "<group>"; };
+		A6E166271B261DAE001CDBC8 /* PassCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassCode.m; sourceTree = "<group>"; };
+		A6E1662A1B261DAE001CDBC8 /* CounterSignCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterSignCode.h; sourceTree = "<group>"; };
+		A6E1662B1B261DAE001CDBC8 /* CounterSignCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterSignCode.m; sourceTree = "<group>"; };
+		A6E166301B261EA2001CDBC8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A6E166311B261EA2001CDBC8 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A6E166341B2623D0001CDBC8 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		A6E166351B2623D0001CDBC8 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		A6E166381B2624B8001CDBC8 /* TaxReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxReceipt.h; sourceTree = "<group>"; };
+		A6E166391B2624B8001CDBC8 /* TaxReceipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxReceipt.m; sourceTree = "<group>"; };
+		A6E1D3AD1B274F740004FF48 /* CNPJFormatterTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPJFormatterTextFieldDelegate.h; sourceTree = "<group>"; };
+		A6E1D3AE1B274F740004FF48 /* CNPJFormatterTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPJFormatterTextFieldDelegate.m; sourceTree = "<group>"; };
+		A6E1D3AF1B274F740004FF48 /* DateFormatterTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatterTextFieldDelegate.h; sourceTree = "<group>"; };
+		A6E1D3B01B274F740004FF48 /* DateFormatterTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatterTextFieldDelegate.m; sourceTree = "<group>"; };
+		A6E1D3B11B274F740004FF48 /* CurrencyFormatterTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyFormatterTextFieldDelegate.h; sourceTree = "<group>"; };
+		A6E1D3B21B274F740004FF48 /* CurrencyFormatterTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyFormatterTextFieldDelegate.m; sourceTree = "<group>"; };
+		A6E1D3B31B274F740004FF48 /* COOFormatterTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COOFormatterTextFieldDelegate.h; sourceTree = "<group>"; };
+		A6E1D3B41B274F740004FF48 /* COOFormatterTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COOFormatterTextFieldDelegate.m; sourceTree = "<group>"; };
+		A6E3171B1B27604700414C9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6E3171D1B27665600414C9C /* NSString+Numeric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Numeric.h"; sourceTree = "<group>"; };
+		A6E3171E1B27665600414C9C /* NSString+Numeric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Numeric.m"; sourceTree = "<group>"; };
+		A6FD5AC01AEADC6800376D9D /* ios-receipt-scan-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-receipt-scan-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FD5AC41AEADC6800376D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FD5AC51AEADC6800376D9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6FD5AC71AEADC6800376D9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6FD5AC81AEADC6800376D9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6FD5ACE1AEADC6800376D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6FD5AD01AEADC6800376D9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6FD5AD31AEADC6800376D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A6FD5AD91AEADC6800376D9D /* ios-receipt-scan-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-receipt-scan-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FD5ADE1AEADC6800376D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FD5ADF1AEADC6800376D9D /* ios_receipt_scan_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_receipt_scan_exampleTests.m; sourceTree = "<group>"; };
+		A6FD5AE91AEADCE300376D9D /* NFNCameraRectDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFNCameraRectDetectionViewController.h; sourceTree = "<group>"; };
+		A6FD5AEA1AEADCE300376D9D /* NFNCameraRectDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFNCameraRectDetectionViewController.m; sourceTree = "<group>"; };
+		A6FD5AEC1AEADD0500376D9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6FD5AEE1AEADD0B00376D9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A6FD5AF01AEADD1300376D9D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A6FD5AF21AEADD1B00376D9D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A6FD5AF41AEADD2600376D9D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		A6FD5AF61AEADD3A00376D9D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A6FD5AF81AEADD4E00376D9D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C823638570856CD3DC79BBB3 /* Pods-ios-receipt-scan-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-receipt-scan-example.debug.xcconfig"; path = "Target Support Files/Pods-ios-receipt-scan-example/Pods-ios-receipt-scan-example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6FD5ABD1AEADC6800376D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E3171C1B27604700414C9C /* QuartzCore.framework in Frameworks */,
+				A6FD5AF91AEADD4E00376D9D /* GLKit.framework in Frameworks */,
+				A6FD5AF71AEADD3A00376D9D /* ImageIO.framework in Frameworks */,
+				A6FD5AF51AEADD2600376D9D /* CoreImage.framework in Frameworks */,
+				A6FD5AF31AEADD1B00376D9D /* CoreVideo.framework in Frameworks */,
+				A6FD5AF11AEADD1300376D9D /* CoreMedia.framework in Frameworks */,
+				A6FD5AEF1AEADD0B00376D9D /* AVFoundation.framework in Frameworks */,
+				A6FD5AED1AEADD0500376D9D /* UIKit.framework in Frameworks */,
+				3FBD82F1EB05CBFD4488E067 /* Pods_ios_receipt_scan_example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD5AD61AEADC6800376D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D201813F3FE7248690B40977 /* Pods_ios_receipt_scan_exampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6E166101B261B93001CDBC8 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD5AC71AEADC6800376D9D /* AppDelegate.h */,
+				A6FD5AC81AEADC6800376D9D /* AppDelegate.m */,
+				A6E1D3AD1B274F740004FF48 /* CNPJFormatterTextFieldDelegate.h */,
+				A6E1D3AE1B274F740004FF48 /* CNPJFormatterTextFieldDelegate.m */,
+				A6E1D3AF1B274F740004FF48 /* DateFormatterTextFieldDelegate.h */,
+				A6E1D3B01B274F740004FF48 /* DateFormatterTextFieldDelegate.m */,
+				A6E1D3B11B274F740004FF48 /* CurrencyFormatterTextFieldDelegate.h */,
+				A6E1D3B21B274F740004FF48 /* CurrencyFormatterTextFieldDelegate.m */,
+				A6E1D3B31B274F740004FF48 /* COOFormatterTextFieldDelegate.h */,
+				A6E1D3B41B274F740004FF48 /* COOFormatterTextFieldDelegate.m */,
+			);
+			name = delegates;
+			sourceTree = "<group>";
+		};
+		A6E166111B261B9D001CDBC8 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD5AE91AEADCE300376D9D /* NFNCameraRectDetectionViewController.h */,
+				A6FD5AEA1AEADCE300376D9D /* NFNCameraRectDetectionViewController.m */,
+				A6D628AD1AEAEB2E00DE2002 /* NFNReceiptRecognitionViewController.h */,
+				A6D628AE1AEAEB2E00DE2002 /* NFNReceiptRecognitionViewController.m */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		A6E166121B261BA3001CDBC8 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				A6E166131B261BFF001CDBC8 /* NFNOCRService.h */,
+				A6E166141B261BFF001CDBC8 /* NFNOCRService.m */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		A6E166161B261CB3001CDBC8 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6E166301B261EA2001CDBC8 /* Constants.h */,
+				A6E166311B261EA2001CDBC8 /* Constants.m */,
+				A6E1661A1B261CD9001CDBC8 /* NetworkAvailabilityUtils.h */,
+				A6E1661B1B261CD9001CDBC8 /* NetworkAvailabilityUtils.m */,
+				A6E166171B261CC9001CDBC8 /* Reachability.h */,
+				A6E166181B261CC9001CDBC8 /* Reachability.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		A6E1661D1B261D69001CDBC8 /* security */ = {
+			isa = PBXGroup;
+			children = (
+				A6E166261B261DAE001CDBC8 /* PassCode.h */,
+				A6E166271B261DAE001CDBC8 /* PassCode.m */,
+				A6E1662A1B261DAE001CDBC8 /* CounterSignCode.h */,
+				A6E1662B1B261DAE001CDBC8 /* CounterSignCode.m */,
+			);
+			name = security;
+			sourceTree = "<group>";
+		};
+		A6E166331B2623C6001CDBC8 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3171D1B27665600414C9C /* NSString+Numeric.h */,
+				A6E3171E1B27665600414C9C /* NSString+Numeric.m */,
+				A6E166341B2623D0001CDBC8 /* UIImage+Common.h */,
+				A6E166351B2623D0001CDBC8 /* UIImage+Common.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
+		A6E166371B2624AE001CDBC8 /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				A6E166381B2624B8001CDBC8 /* TaxReceipt.h */,
+				A6E166391B2624B8001CDBC8 /* TaxReceipt.m */,
+			);
+			name = bean;
+			sourceTree = "<group>";
+		};
+		A6FD5AB71AEADC6800376D9D = {
+			isa = PBXGroup;
+			children = (
+				A6FD5AFA1AEADD6100376D9D /* Frameworks */,
+				A6FD5AC21AEADC6800376D9D /* ios-receipt-scan-example */,
+				A6FD5ADC1AEADC6800376D9D /* ios-receipt-scan-exampleTests */,
+				A6FD5AC11AEADC6800376D9D /* Products */,
+				F52D8B958EAFC24CB99FBBBD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A6FD5AC11AEADC6800376D9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD5AC01AEADC6800376D9D /* ios-receipt-scan-example.app */,
+				A6FD5AD91AEADC6800376D9D /* ios-receipt-scan-exampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FD5AC21AEADC6800376D9D /* ios-receipt-scan-example */ = {
+			isa = PBXGroup;
+			children = (
+				A6E166101B261B93001CDBC8 /* delegates */,
+				A6E166331B2623C6001CDBC8 /* categories */,
+				A6E166371B2624AE001CDBC8 /* bean */,
+				A6E166111B261B9D001CDBC8 /* viewcontrollers */,
+				A6E166121B261BA3001CDBC8 /* services */,
+				A6E166161B261CB3001CDBC8 /* utils */,
+				A6E1661D1B261D69001CDBC8 /* security */,
+				A6FD5ACD1AEADC6800376D9D /* Main.storyboard */,
+				A6FD5AD01AEADC6800376D9D /* Images.xcassets */,
+				A6FD5AD21AEADC6800376D9D /* LaunchScreen.xib */,
+				A6FD5AC31AEADC6800376D9D /* Supporting Files */,
+			);
+			path = "ios-receipt-scan-example";
+			sourceTree = "<group>";
+		};
+		A6FD5AC31AEADC6800376D9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD5AC41AEADC6800376D9D /* Info.plist */,
+				A6FD5AC51AEADC6800376D9D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6FD5ADC1AEADC6800376D9D /* ios-receipt-scan-exampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD5ADF1AEADC6800376D9D /* ios_receipt_scan_exampleTests.m */,
+				A6FD5ADD1AEADC6800376D9D /* Supporting Files */,
+			);
+			path = "ios-receipt-scan-exampleTests";
+			sourceTree = "<group>";
+		};
+		A6FD5ADD1AEADC6800376D9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD5ADE1AEADC6800376D9D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6FD5AFA1AEADD6100376D9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3171B1B27604700414C9C /* QuartzCore.framework */,
+				A6FD5AF81AEADD4E00376D9D /* GLKit.framework */,
+				A6FD5AF61AEADD3A00376D9D /* ImageIO.framework */,
+				A6FD5AF41AEADD2600376D9D /* CoreImage.framework */,
+				A6FD5AF21AEADD1B00376D9D /* CoreVideo.framework */,
+				A6FD5AF01AEADD1300376D9D /* CoreMedia.framework */,
+				A6FD5AEE1AEADD0B00376D9D /* AVFoundation.framework */,
+				A6FD5AEC1AEADD0500376D9D /* UIKit.framework */,
+				7654ED0619D13805FF497738 /* Pods_ios_receipt_scan_example.framework */,
+				455229F8E0F1219CB25A6A18 /* Pods_ios_receipt_scan_exampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F52D8B958EAFC24CB99FBBBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C823638570856CD3DC79BBB3 /* Pods-ios-receipt-scan-example.debug.xcconfig */,
+				4C9FFFD7F2A658E402603D29 /* Pods-ios-receipt-scan-example.release.xcconfig */,
+				11E5B9B769B9A9DCF0E8A015 /* Pods-ios-receipt-scan-exampleTests.debug.xcconfig */,
+				5E43F4A3AB491B9A3F9847B3 /* Pods-ios-receipt-scan-exampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6FD5ABF1AEADC6800376D9D /* ios-receipt-scan-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FD5AE31AEADC6800376D9D /* Build configuration list for PBXNativeTarget "ios-receipt-scan-example" */;
+			buildPhases = (
+				34D616CE31B60E7CB1D0D936 /* [CP] Check Pods Manifest.lock */,
+				A6FD5ABC1AEADC6800376D9D /* Sources */,
+				A6FD5ABD1AEADC6800376D9D /* Frameworks */,
+				A6FD5ABE1AEADC6800376D9D /* Resources */,
+				4D4D39B29A502BD367D0AB0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-receipt-scan-example";
+			productName = "ios-receipt-scan-example";
+			productReference = A6FD5AC01AEADC6800376D9D /* ios-receipt-scan-example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6FD5AD81AEADC6800376D9D /* ios-receipt-scan-exampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FD5AE61AEADC6800376D9D /* Build configuration list for PBXNativeTarget "ios-receipt-scan-exampleTests" */;
+			buildPhases = (
+				08F6D864BC9CC176EC1C2DCD /* [CP] Check Pods Manifest.lock */,
+				A6FD5AD51AEADC6800376D9D /* Sources */,
+				A6FD5AD61AEADC6800376D9D /* Frameworks */,
+				A6FD5AD71AEADC6800376D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FD5ADB1AEADC6800376D9D /* PBXTargetDependency */,
+			);
+			name = "ios-receipt-scan-exampleTests";
+			productName = "ios-receipt-scan-exampleTests";
+			productReference = A6FD5AD91AEADC6800376D9D /* ios-receipt-scan-exampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6FD5AB81AEADC6800376D9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Paulo Miguel Almeida Rodenas";
+				TargetAttributes = {
+					A6FD5ABF1AEADC6800376D9D = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = D7N9CPQ75A;
+					};
+					A6FD5AD81AEADC6800376D9D = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A6FD5ABF1AEADC6800376D9D;
+					};
+				};
+			};
+			buildConfigurationList = A6FD5ABB1AEADC6800376D9D /* Build configuration list for PBXProject "ios-receipt-scan-example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = A6FD5AB71AEADC6800376D9D;
+			productRefGroup = A6FD5AC11AEADC6800376D9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6FD5ABF1AEADC6800376D9D /* ios-receipt-scan-example */,
+				A6FD5AD81AEADC6800376D9D /* ios-receipt-scan-exampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6FD5ABE1AEADC6800376D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD5ACF1AEADC6800376D9D /* Main.storyboard in Resources */,
+				A6FD5AD41AEADC6800376D9D /* LaunchScreen.xib in Resources */,
+				A6FD5AD11AEADC6800376D9D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD5AD71AEADC6800376D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08F6D864BC9CC176EC1C2DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-receipt-scan-exampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D616CE31B60E7CB1D0D936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-receipt-scan-example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4D39B29A502BD367D0AB0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-receipt-scan-example/Pods-ios-receipt-scan-example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-receipt-scan-example/Pods-ios-receipt-scan-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6FD5ABC1AEADC6800376D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E166151B261BFF001CDBC8 /* NFNOCRService.m in Sources */,
+				A6FD5AC91AEADC6800376D9D /* AppDelegate.m in Sources */,
+				A6FD5AC61AEADC6800376D9D /* main.m in Sources */,
+				A6E1D3B81B274F740004FF48 /* COOFormatterTextFieldDelegate.m in Sources */,
+				A6E1D3B71B274F740004FF48 /* CurrencyFormatterTextFieldDelegate.m in Sources */,
+				A6E1662F1B261DAE001CDBC8 /* CounterSignCode.m in Sources */,
+				A6E1663A1B2624B8001CDBC8 /* TaxReceipt.m in Sources */,
+				A6D628AF1AEAEB2E00DE2002 /* NFNReceiptRecognitionViewController.m in Sources */,
+				A6E166191B261CC9001CDBC8 /* Reachability.m in Sources */,
+				A6E1661C1B261CD9001CDBC8 /* NetworkAvailabilityUtils.m in Sources */,
+				A6E1D3B61B274F740004FF48 /* DateFormatterTextFieldDelegate.m in Sources */,
+				A6E3171F1B27665600414C9C /* NSString+Numeric.m in Sources */,
+				A6E1D3B51B274F740004FF48 /* CNPJFormatterTextFieldDelegate.m in Sources */,
+				A6E166361B2623D0001CDBC8 /* UIImage+Common.m in Sources */,
+				A6E1662D1B261DAE001CDBC8 /* PassCode.m in Sources */,
+				A6FD5AEB1AEADCE300376D9D /* NFNCameraRectDetectionViewController.m in Sources */,
+				A6E166321B261EA2001CDBC8 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FD5AD51AEADC6800376D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD5AE01AEADC6800376D9D /* ios_receipt_scan_exampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FD5ADB1AEADC6800376D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FD5ABF1AEADC6800376D9D /* ios-receipt-scan-example */;
+			targetProxy = A6FD5ADA1AEADC6800376D9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6FD5ACD1AEADC6800376D9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FD5ACE1AEADC6800376D9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6FD5AD21AEADC6800376D9D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FD5AD31AEADC6800376D9D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6FD5AE11AEADC6800376D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6FD5AE21AEADC6800376D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6FD5AE41AEADC6800376D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C823638570856CD3DC79BBB3 /* Pods-ios-receipt-scan-example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7N9CPQ75A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "ios-receipt-scan-example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.nfscan.ios-receipt-scan-example1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6FD5AE51AEADC6800376D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9FFFD7F2A658E402603D29 /* Pods-ios-receipt-scan-example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7N9CPQ75A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "ios-receipt-scan-example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.nfscan.ios-receipt-scan-example1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6FD5AE71AEADC6800376D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E5B9B769B9A9DCF0E8A015 /* Pods-ios-receipt-scan-exampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ios-receipt-scan-exampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-receipt-scan-example.app/ios-receipt-scan-example";
+			};
+			name = Debug;
+		};
+		A6FD5AE81AEADC6800376D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E43F4A3AB491B9A3F9847B3 /* Pods-ios-receipt-scan-exampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ios-receipt-scan-exampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-receipt-scan-example.app/ios-receipt-scan-example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6FD5ABB1AEADC6800376D9D /* Build configuration list for PBXProject "ios-receipt-scan-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD5AE11AEADC6800376D9D /* Debug */,
+				A6FD5AE21AEADC6800376D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FD5AE31AEADC6800376D9D /* Build configuration list for PBXNativeTarget "ios-receipt-scan-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD5AE41AEADC6800376D9D /* Debug */,
+				A6FD5AE51AEADC6800376D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FD5AE61AEADC6800376D9D /* Build configuration list for PBXNativeTarget "ios-receipt-scan-exampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FD5AE71AEADC6800376D9D /* Debug */,
+				A6FD5AE81AEADC6800376D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6FD5AB81AEADC6800376D9D /* Project object */;
+}
